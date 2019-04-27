@@ -1,0 +1,58 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container">
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+    <p> message from child : {{msg}}</p>
+  </div>
+
+
+  <hr>
+  <h1>Routing and navigations</h1>
+  <nav>
+    <a class="btn btn-dafault" routerLink="/languages" routerLinkActive="active">Languages </a>
+    <a class="btn btn-dafault" routerLink="/systems" routerLinkActive="active">Systems </a>
+  </nav>
+  <router-outlet></router-outlet>
+
+
+  <hr>
+  <h1>Services and Http requests</h1>
+  <app-list-languages></app-list-languages>
+  <app-list-details-languages></app-list-details-languages>
+
+
+  <hr>
+  <app-pipes></app-pipes>
+
+  <hr>
+  <app-comp-interaction (childEvent)="msg=$event" [parentData]="name"></app-comp-interaction>
+
+  <hr>
+  <app-ng-for></app-ng-for>
+
+  <hr>
+  <app-ng-switch></app-ng-switch>
+
+  <hr>
+  <app-ng-if></app-ng-if>
+
+  <hr>
+  <app-two-way-binding></app-two-way-binding>
+
+  <hr>
+  <app-template-ref-var></app-template-ref-var>
+
+  <hr>
+  <app-class-binding></app-class-binding>
+
+  <hr>
+  <app-style-binding></app-style-binding>
+
+  <hr>
+  <app-event-binding></app-event-binding>
+</div>
+
+
